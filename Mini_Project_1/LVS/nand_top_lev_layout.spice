@@ -1,0 +1,15 @@
+* SPICE3 file created from nand_top_lev.ext - technology: sky130A
+
+.subckt nand_gate A B VP VN Y
+X0 Y B a_30_0# VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=1e+12p ps=6e+06u w=1e+06u l=150000u
+X1 a_30_0# A VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X2 Y B VP VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=150000u
+X3 Y A VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+
+* Top level circuit nand_top_lev
+
+Xnand_gate_0 A B VP VN Y nand_gate
+.end
+

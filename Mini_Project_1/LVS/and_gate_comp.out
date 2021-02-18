@@ -1,0 +1,62 @@
+Flattening unmatched subcell AND_Gate in circuit and_gate_lvs_xschem.spice (0)(1 instance)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: NAND_Gate                       |Circuit 2: nand_gate                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: NAND_Gate                       |Circuit 2: nand_gate                       
+-------------------------------------------|-------------------------------------------
+VP                                         |VP                                         
+Y                                          |Y                                          
+VN                                         |VN                                         
+B                                          |B                                          
+A                                          |A                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NAND_Gate and nand_gate are equivalent.
+
+Subcircuit summary:
+Circuit 1: Inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: Inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VN                                         |VN                                         
+VP                                         |VP                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes Inverter and inverter are equivalent.
+
+Subcircuit summary:
+Circuit 1: and_gate_lvs_xschem.spice       |Circuit 2: and_gate_layout.spice           
+-------------------------------------------|-------------------------------------------
+NAND_Gate (1)                              |nand_gate (1)                              
+Inverter (1)                               |inverter (1)                               
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes and_gate_lvs_xschem.spice and and_gate_layout.spice are equivalent.
+Circuits match uniquely.

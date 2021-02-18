@@ -1,0 +1,21 @@
+magic
+tech sky130A
+timestamp 1613671100
+<< locali >>
+rect 411 192 450 212
+rect -4 47 41 67
+rect 201 47 246 67
+<< metal1 >>
+rect -4 242 21 332
+rect -4 87 21 177
+use nand_gate  nand_gate_0 ~/Documents/Mini_Project_1/layout
+timestamp 1613671100
+transform 1 0 116 0 1 82
+box -120 -55 334 296
+<< labels >>
+rlabel metal1 -4 132 -4 132 7 VN
+rlabel metal1 -4 287 -4 287 7 VP
+rlabel locali -4 57 -4 57 7 A
+rlabel locali 201 57 201 57 7 B
+rlabel locali 450 202 450 202 3 Y
+<< end >>
