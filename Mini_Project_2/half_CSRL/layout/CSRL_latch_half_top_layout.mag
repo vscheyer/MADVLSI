@@ -1,0 +1,25 @@
+magic
+tech sky130A
+timestamp 1614575748
+<< locali >>
+rect 39 770 59 792
+rect 184 777 204 792
+rect 279 372 314 392
+rect 280 327 314 347
+rect -1 152 19 172
+<< metal1 >>
+rect 19 651 32 752
+rect 19 17 32 117
+use CSRL_latch_half  CSRL_latch_half_0 ~/Documents/Mini_Project_2
+timestamp 1614575639
+transform 1 0 84 0 1 237
+box -90 -235 230 555
+<< labels >>
+rlabel metal1 19 67 19 67 7 VN
+rlabel locali -1 162 -1 162 7 clk
+rlabel locali 314 382 314 382 3 Qb
+rlabel locali 314 337 314 337 3 Q
+rlabel metal1 19 702 19 702 7 VP
+rlabel locali 49 792 49 792 1 Db
+rlabel locali 194 792 194 792 1 D
+<< end >>

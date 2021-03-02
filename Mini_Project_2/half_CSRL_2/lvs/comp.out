@@ -1,0 +1,44 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Cell CSRL_latch_half_2 disconnected node: clk
+
+Subcircuit summary:
+Circuit 1: CSRL_latch_half_2               |Circuit 2: CSRL_latch_half_2               
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (4)                |sky130_fd_pr__nfet_01v8 (4)                
+sky130_fd_pr__pfet_01v8 (3)                |sky130_fd_pr__pfet_01v8 (3)                
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: CSRL_latch_half_2               |Circuit 2: CSRL_latch_half_2               
+-------------------------------------------|-------------------------------------------
+VP                                         |VP                                         
+VN                                         |VN                                         
+Db                                         |Db                                         
+D                                          |D                                          
+Qb                                         |Qb                                         
+Q                                          |Q                                          
+clk                                        |clk                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes CSRL_latch_half_2 and CSRL_latch_half_2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: CSRL_latch_half_2_top_lev.spice |Circuit 2: CSRL_latch_half_2_top_layout.sp 
+-------------------------------------------|-------------------------------------------
+CSRL_latch_half_2 (1)                      |CSRL_latch_half_2 (1)                      
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes CSRL_latch_half_2_top_lev.spice and CSRL_latch_half_2_top_layout.spice are equivalent.
+Circuits match uniquely.

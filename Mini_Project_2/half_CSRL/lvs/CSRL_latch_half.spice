@@ -1,0 +1,12 @@
+* SPICE3 file created from CSRL_latch_half.ext - technology: sky130A
+
+.subckt CSRL_latch_half D Db Q Qb clk VP VN
+X0 Q Qb VP Q sky130_fd_pr__pfet_01v8 ad=1.5e+12p pd=9e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 Q Qb a_30_n440# Q sky130_fd_pr__nfet_01v8 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=150000u
+X2 VP Q Qb Q sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=1e+12p ps=6e+06u w=1e+06u l=150000u
+X3 a_30_n440# Q Qb Q sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X4 Q clk D Q sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X5 a_30_n440# clk VN Q sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X6 Qb clk Db Q sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+.ends
+
