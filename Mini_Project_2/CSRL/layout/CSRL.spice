@@ -1,0 +1,12 @@
+* SPICE3 file created from CSRL.ext - technology: sky130A
+
+.subckt CSRL D Db Q Qb VP VN clk
+X0 Qb clk Db w_n140_200# sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 Q clk D w_n140_200# sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X2 Q Qb a_n100_n750# VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=1e+12p ps=6e+06u w=1e+06u l=150000u
+X3 Q Qb VP w_n140_200# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X4 VN clk a_n100_n750# VN sky130_fd_pr__nfet_01v8 ad=4.5e+11p pd=2.9e+06u as=0p ps=0u w=1e+06u l=150000u
+X5 a_n100_n750# Q Qb VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X6 VP Q Qb w_n140_200# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+

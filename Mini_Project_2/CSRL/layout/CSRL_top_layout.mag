@@ -1,0 +1,25 @@
+magic
+tech sky130A
+timestamp 1614660468
+<< locali >>
+rect 1 990 12 1010
+rect 216 990 231 1010
+rect 234 764 247 785
+rect 1 625 11 645
+rect 1 585 12 605
+<< metal1 >>
+rect 0 1160 20 1260
+rect 8 8 24 110
+use CSRL  CSRL_0 ~/Documents/Mini_Project_2/CSRL/layout
+timestamp 1614660232
+transform 1 0 76 0 1 385
+box -76 -390 171 1000
+<< labels >>
+rlabel metal1 8 59 8 59 7 VN
+rlabel locali 1 595 1 595 7 Db
+rlabel locali 1 635 1 635 7 clk
+rlabel locali 1 1000 1 1000 7 D
+rlabel metal1 0 1210 0 1210 7 VP
+rlabel locali 231 1000 231 1000 3 Q
+rlabel locali 247 774 247 774 3 Qb
+<< end >>
