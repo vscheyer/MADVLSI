@@ -227,8 +227,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos4.sym} 630 -300 1 0 {name=M8
-L=0.15
-W=0.25
+L=0.3
+W=0.5
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -241,8 +241,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos4.sym} 630 -180 1 0 {name=M9
-L=0.15
-W=0.25
+L=0.3
+W=0.5
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
