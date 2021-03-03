@@ -43,13 +43,7 @@ N 770 -280 1090 -280 { lab=clk}
 N 1090 -280 1410 -280 { lab=clk}
 N 1570 -530 1570 -520 { lab=Q3}
 N 1540 -520 1570 -520 { lab=Q3}
-N 1540 -440 1570 -440 { lab=Qb3}
-N 60 -540 60 -530 { lab=VDD}
-N 60 -470 60 -460 { lab=GND}
-N 60 -380 60 -370 { lab=clk}
-N 60 -310 60 -300 { lab=GND}
-N 60 -220 60 -210 { lab=D}
-N 60 -150 60 -140 { lab=GND}
+N 1540 -440 1570 -440 { lab=Qb2}
 C {/home/madvlsi/Documents/Mini_Project_2/CSRL_latch.sym} 110 -280 0 0 {name=X1}
 C {/home/madvlsi/Documents/Mini_Project_2/CSRL_latch.sym} 430 -280 0 0 {name=X2}
 C {/home/madvlsi/Documents/Mini_Project_1/Inverter.sym} 180 -440 0 0 {name=X5}
@@ -76,24 +70,3 @@ C {madvlsi/vdd.sym} 1350 -660 0 0 {name=l18 lab=VDD}
 C {madvlsi/gnd.sym} 1480 -320 0 0 {name=l19 lab=GND}
 C {devices/lab_pin.sym} 1570 -440 2 0 {name=l20 sig_type=std_logic lab=Qb3}
 C {devices/lab_pin.sym} 1570 -530 1 0 {name=l21 sig_type=std_logic lab=Q3}
-C {devices/code_shown.sym} 190 -760 0 0 {name=SPICE only_toplevel=false value=".ic v(Q0)=0 v(Q1)=0 v(Q2)=0 v(Q3)=0
-.tran 0.01n 100n
-.save all"}
-C {madvlsi/vsource.sym} 60 -500 0 0 {name=Vdd
-value=1.8}
-C {madvlsi/vdd.sym} 60 -540 0 0 {name=l22 lab=VDD}
-C {madvlsi/gnd.sym} 60 -460 0 0 {name=l23 lab=GND}
-C {madvlsi/vsource.sym} 60 -340 0 0 {name=Vclk
-value="pulse(0 1.8 1n 1n 1n 4n 10n)"}
-C {madvlsi/gnd.sym} 60 -300 0 0 {name=l25 lab=GND}
-C {devices/lab_pin.sym} 60 -380 2 0 {name=l24 sig_type=std_logic lab=clk}
-C {madvlsi/vsource.sym} 60 -180 0 0 {name=Vin
-value="pwl(0 0 25n 0 26n 1.8 40n 1.8 41n 0)"}
-C {madvlsi/gnd.sym} 60 -140 0 0 {name=l26 lab=GND}
-C {devices/lab_pin.sym} 60 -220 2 0 {name=l27 sig_type=std_logic lab=D}
-C {madvlsi/tt_models.sym} 30 -760 0 0 {
-name=TT_MODELS
-only_toplevel=false
-value=".option wnflag=1
-.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
-}
