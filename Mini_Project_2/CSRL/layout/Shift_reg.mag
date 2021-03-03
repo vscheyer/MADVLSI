@@ -1,0 +1,58 @@
+magic
+tech sky130A
+timestamp 1614738317
+<< locali >>
+rect -3 1226 7 1246
+rect -3 1176 21 1196
+rect 443 1176 496 1196
+rect 922 1176 965 1196
+rect 1401 1176 1436 1196
+rect 1872 1176 1897 1196
+rect -339 561 -310 581
+rect -148 561 3 581
+rect 448 561 472 581
+rect 923 561 947 581
+rect 1398 561 1421 581
+rect 1872 561 1887 581
+<< metal1 >>
+rect -3 1345 19 1446
+rect -339 756 -323 846
+rect -339 601 -321 691
+rect -13 95 18 196
+use inverter  inverter_0
+timestamp 1613437999
+transform 1 0 -219 0 1 596
+box -120 -55 85 275
+use CSRL  CSRL_3
+timestamp 1614735841
+transform 1 0 1497 0 1 571
+box -85 -570 401 1000
+use CSRL  CSRL_2
+timestamp 1614735841
+transform 1 0 1022 0 1 571
+box -85 -570 401 1000
+use CSRL  CSRL_1
+timestamp 1614735841
+transform 1 0 547 0 1 571
+box -85 -570 401 1000
+use CSRL  CSRL_0
+timestamp 1614735841
+transform 1 0 72 0 1 571
+box -85 -570 401 1000
+<< labels >>
+rlabel locali -339 571 -339 571 7 D
+rlabel locali -3 1186 -3 1186 7 D
+rlabel locali -3 1236 -3 1236 7 clk
+rlabel metal1 -3 1396 -3 1396 7 VP
+rlabel metal1 -13 146 -13 146 7 VN
+rlabel locali 1887 571 1887 571 3 Qb3
+rlabel locali 1897 1186 1897 1186 3 Q3
+rlabel locali 1409 581 1409 581 1 Qb2
+rlabel locali 1418 1196 1418 1196 1 Q2
+rlabel locali 944 1196 944 1196 1 Q1
+rlabel locali 935 581 935 581 1 Qb1
+rlabel locali 459 581 459 581 1 Qb0
+rlabel locali 470 1196 470 1196 1 Q0
+rlabel metal1 -339 801 -339 801 7 VP
+rlabel metal1 -339 646 -339 646 7 VN
+<< end >>

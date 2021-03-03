@@ -1,0 +1,41 @@
+Flattening unmatched subcell CSRL_latch in circuit Shift_reg_top_lev.spice (0)(4 instances)
+Flattening unmatched subcell CSRL in circuit Shift_reg.spice (1)(4 instances)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: Inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: Inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VN                                         |VN                                         
+VP                                         |VP                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes Inverter and inverter are equivalent.
+
+Subcircuit summary:
+Circuit 1: Shift_reg_top_lev.spice         |Circuit 2: Shift_reg.spice                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (28)               |sky130_fd_pr__pfet_01v8 (28)               
+sky130_fd_pr__nfet_01v8 (28)               |sky130_fd_pr__nfet_01v8 (28)               
+Inverter (1)                               |inverter (1)                               
+Number of devices: 57                      |Number of devices: 57                      
+Number of nets: 29                         |Number of nets: 29                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes Shift_reg_top_lev.spice and Shift_reg.spice are equivalent.
+Circuits match uniquely.
