@@ -3,17 +3,17 @@
 .subckt CSRL D Db clk Qb Q VP VN
 X0 VN clk a_n100_n950# VN sky130_fd_pr__nfet_01v8 ad=9.5e+11p pd=5.9e+06u as=1e+12p ps=6e+06u w=1e+06u l=150000u
 X1 a_n100_n460# clk Db VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
-X2 VN Q Qb VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1e+12p ps=6e+06u w=1e+06u l=150000u
+X2 VN Q Qb VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=7.5e+11p ps=5e+06u w=1e+06u l=150000u
 X3 a_n50_700# clk D VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
 X4 a_510_1060# Q Qb VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
 X5 a_510_1060# clk VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=1e+12p ps=6e+06u w=1e+06u l=150000u
-X6 Q clk a_n50_700# VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=150000u
-X7 a_n100_n950# a_n50_700# a_n100_n460# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1e+12p ps=6e+06u w=1e+06u l=150000u
-X8 a_n50_700# a_n100_n460# VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
-X9 Qb clk a_n100_n460# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
-X10 Q Qb VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
-X11 Q Qb a_510_1060# VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
-X12 a_n50_700# a_n100_n460# a_n100_n950# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X6 a_n100_n950# a_n50_700# a_n100_n460# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=7.5e+11p ps=5e+06u w=1e+06u l=150000u
+X7 a_n50_700# a_n100_n460# VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X8 Q Qb VN VN sky130_fd_pr__nfet_01v8 ad=7.5e+11p pd=5e+06u as=0p ps=0u w=1e+06u l=150000u
+X9 Q clk a_n50_700# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=7.5e+11p ps=5e+06u w=500000u l=300000u
+X10 Q Qb a_510_1060# VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+X11 a_n50_700# a_n100_n460# a_n100_n950# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X12 Qb clk a_n100_n460# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=300000u
 X13 VP a_n50_700# a_n100_n460# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
 .ends
 

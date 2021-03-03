@@ -1,25 +1,25 @@
 magic
 tech sky130A
-timestamp 1614710827
+timestamp 1614736132
 << locali >>
-rect 5 1225 15 1245
-rect 5 1175 35 1195
-rect 450 1175 480 1195
-rect -5 560 35 580
-rect 455 560 470 580
+rect 15 1225 25 1245
+rect 15 1175 45 1195
+rect 465 1175 490 1195
+rect 5 560 30 580
+rect 465 560 480 580
 << metal1 >>
-rect 5 1335 25 1445
-rect -5 95 25 210
+rect 15 1335 35 1445
+rect 5 95 35 195
 use CSRL  CSRL_0 ~/Documents/Mini_Project_2/CSRL/layout
-timestamp 1614710634
-transform 1 0 80 0 1 570
+timestamp 1614735841
+transform 1 0 90 0 1 570
 box -85 -570 401 1000
 << labels >>
-rlabel metal1 -5 145 -5 145 7 VN
-rlabel locali -5 570 -5 570 7 Db
-rlabel locali 5 1185 5 1185 7 D
-rlabel locali 5 1235 5 1235 7 clk
-rlabel metal1 5 1395 5 1395 7 VP
-rlabel locali 470 570 470 570 3 Qb
-rlabel locali 480 1185 480 1185 3 Q
+rlabel metal1 5 145 5 145 7 VN
+rlabel locali 5 570 5 570 7 Db
+rlabel locali 15 1185 15 1185 7 D
+rlabel locali 15 1235 15 1235 7 clk
+rlabel metal1 15 1395 15 1395 7 VP
+rlabel locali 490 1185 490 1185 3 Q
+rlabel locali 480 570 480 570 3 Qb
 << end >>
