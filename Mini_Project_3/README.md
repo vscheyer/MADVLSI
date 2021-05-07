@@ -6,6 +6,8 @@ Vienna Scheyer
 ### Which is the inverting input? Which is the non-inverting input? Explain your reasoning briefly
 The noninverting input is V1, and the inverting input is V2. I started out looking at the circuit from the perspective of the currents flowing through it, so that's how I started to approach this. Figure 1 shows the currents in the circuit based on applying KCL at the node below Mb. KCL at that node says that Ib = I1 + I2, so I used that equation throughout the rest of the circuit to annotate currents. I2 runs through M5, M7, and M9, and then I2 is mirrored over to M8 and it flows through M10 as well. Applying KLC at the node below M6, it is apparent that I1 is flowing M6. Applying KCL again at the node between M10 and M6, we can see that the output current Iout = I2 - I1. 
 
+![image](images/MP3_currents_grok.jpg)
+
 Based on this understanding of the relationships between the currents in the circuit, we can say that a decrease in I1 means that Vout increases. V1 must increase in order for I1 to decrease. So when V1 increases, Vout also increases. Thus, V1 is the noninverting input.
 
 For the other input, an increase in I2 means that Vout increases. V2 must decrease in order for I2 to increase. So when V2 decreases, Vout increases. This means V2 is the inverting input.
