@@ -13,6 +13,7 @@ N 400 -310 400 -240 { lab=Vcn}
 N 240 -80 240 -60 { lab=VN}
 N 240 -400 240 -370 { lab=VP}
 N 400 -400 400 -370 { lab=VP}
+N 430 -210 460 -210 { lab=Vcn}
 N 120 -400 120 -370 { lab=VP}
 N 200 -260 240 -260 { lab=#net1}
 N 200 -260 200 -210 { lab=#net1}
@@ -22,16 +23,18 @@ N 200 -110 210 -110 { lab=#net1}
 N 440 -260 440 -210 { lab=Vcn}
 N 400 -260 440 -260 { lab=Vcn}
 N 570 -400 570 -370 { lab=VP}
+N 540 -340 650 -340 { lab=Vbp}
 N 570 -310 570 -140 { lab=Vbn}
 N 570 -80 570 -60 { lab=VN}
 N 740 -80 740 -60 { lab=VN}
 N 900 -180 900 -140 { lab=#net3}
-N 740 -180 740 -140 { lab=#net4}
-N 700 -210 700 -160 { lab=#net4}
-N 700 -160 740 -160 { lab=#net4}
-N 900 -310 900 -240 { lab=#net5}
-N 740 -260 740 -240 { lab=#net5}
-N 740 -260 900 -260 { lab=#net5}
+N 680 -210 710 -210 { lab=Vcp}
+N 740 -180 740 -140 { lab=Vcp}
+N 700 -210 700 -160 { lab=Vcp}
+N 700 -160 740 -160 { lab=Vcp}
+N 900 -310 900 -240 { lab=#net4}
+N 740 -260 740 -240 { lab=#net4}
+N 740 -260 900 -260 { lab=#net4}
 N 930 -340 940 -340 { lab=#net3}
 N 940 -340 940 -210 { lab=#net3}
 N 930 -210 940 -210 { lab=#net3}
@@ -47,25 +50,25 @@ N 900 -60 900 -30 { lab=VN}
 N 540 -160 570 -160 { lab=Vbn}
 N 170 -340 170 -260 { lab=Vbp}
 N 120 -260 170 -260 { lab=Vbp}
-N 120 -310 120 -210 { lab=Vbp}
+N 120 -310 120 -210 { lab=Vb}
 N 210 -340 370 -340 { lab=Vbp}
 N 370 -340 540 -340 { lab=Vbp}
+N 500 -110 540 -110 { lab=Vbn}
 N 520 -160 520 -110 { lab=Vbn}
 N 520 -160 540 -160 { lab=Vbn}
 N 540 -110 710 -110 { lab=Vbn}
 N 710 -110 870 -110 { lab=Vbn}
-N 430 -210 440 -210 { lab=Vcn}
-N 520 -110 540 -110 { lab=Vbn}
-N 700 -210 710 -210 { lab=#net4}
-N 440 -210 460 -210 { lab=Vcn}
-N 490 -110 520 -110 { lab=Vbn}
-N 680 -210 700 -210 {}
 C {devices/iopin.sym} 240 -390 3 0 {name=p1 lab=VP}
 C {devices/iopin.sym} 240 -40 1 0 {name=p2 lab=VN}
 C {devices/iopin.sym} 570 -40 1 0 {name=p10 lab=VN}
 C {devices/iopin.sym} 740 -40 1 0 {name=p11 lab=VN}
 C {devices/iopin.sym} 900 -40 1 0 {name=p13 lab=VN}
 C {devices/iopin.sym} 900 -390 3 0 {name=p14 lab=VP}
+C {devices/opin.sym} 640 -340 0 0 {name=p8 lab=Vbp}
+C {devices/opin.sym} 450 -210 0 0 {name=p4 lab=Vcn}
+C {devices/opin.sym} 690 -210 2 0 {name=p12 lab=Vcp}
+C {devices/opin.sym} 510 -110 2 0 {name=p9 lab=Vbn}
+C {devices/ipin.sym} 120 -220 3 0 {name=p5 lab=Vb}
 C {madvlsi/madvlsi/pmos3.sym} 120 -340 2 0 {name=M6
 L=l
 W=w
@@ -264,7 +267,3 @@ spiceprefix=X
 C {devices/iopin.sym} 120 -390 3 0 {name=p3 lab=VP}
 C {devices/iopin.sym} 400 -390 3 0 {name=p6 lab=VP}
 C {devices/iopin.sym} 570 -390 3 0 {name=p7 lab=VP}
-C {devices/iopin.sym} 120 -220 1 0 {name=p5 lab=Vbp}
-C {devices/opin.sym} 450 -210 0 0 {name=p4 lab=Vcn}
-C {devices/opin.sym} 500 -110 2 0 {name=p8 lab=Vbn}
-C {devices/opin.sym} 680 -210 2 0 {name=p9 lab=Vcp}
