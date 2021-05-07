@@ -19,7 +19,9 @@ The upper bound for the common mode input voltage must allow for the PMOS transi
 Iout = I2 - I1 (see section 1 for further explanation).
 
 ### Do we need to make the bias current sunk by M3 and M4 equal to the diff-pairbias current,Ib?
-### Design a bias circuit for the folded-cascode amplifier that receivesinput from a single current source.
+No. If the current flowing through transistors M3 and M4 is different from Ib, the math still works out so that Iout = I2 - I1. Figure 2 shows what this looks like. If the current flowing through M3 is called I3 and the current flowing through M4 is I4, we know that I3 = I4 due to the PMOS current mirror. Applying KCL at the node between M3 and M5 we can create an equation 
+
+### Design a bias circuit for the folded-cascode amplifier that receives input from a single current source.
 ## 2. Schematic Capture and simulation
 
 ### Voltage Transfer Characteristics
