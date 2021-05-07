@@ -4,7 +4,9 @@ Vienna Scheyer
 
 ## 1. Grok the Circuit
 ### Which is the inverting input? Which is the non-inverting input? Explain your reasoning briefly
-The noninverting input is V1, and the inverting input is V2. I started out looking at the circuit from the perspective of the currents flowing through it, so that's how I started to approach this. Figure 1 shows the currents in the circuit based on applying KCL at the node below Mb. KCL at that node says that Ib = I1 + I2, so I used that equation throughout the rest of the circuit to annotate currents. I2 runs through M5, M7, and M9, and then I2 is mirrored over to M8 and it flows through M10 as well. Applying KLC at the node below M6, it is apparent that I1 is flowing M6. Applying KCL again at the node between M10 and M6, we can see that the output current Iout = I2 - I1. 
+The noninverting input is V1, and the inverting input is V2. I started out by looking at the circuit from the perspective of the currents flowing through it, so that's how I approached this. Figure 1 shows the currents in the circuit based on applying KCL at the node below Mb. KCL at that node says that Ib = I1 + I2, so I used that equation throughout the rest of the circuit to annotate currents. I2 runs through M5, M7, and M9, and then I2 is mirrored over to M8 and it flows through M10 as well. Applying KLC at the node below M6, it is apparent that I1 is flowing M6. Applying KCL again at the node between M10 and M6, we can see that the output current Iout = I2 - I1. 
+
+![image](images/MP3_currents_grok.jpg)
 
 Based on this understanding of the relationships between the currents in the circuit, we can say that a decrease in I1 means that Vout increases. V1 must increase in order for I1 to decrease. So when V1 increases, Vout also increases. Thus, V1 is the noninverting input.
 
@@ -17,7 +19,9 @@ The upper bound for the common mode input voltage must allow for the PMOS transi
 Iout = I2 - I1 (see section 1 for further explanation).
 
 ### Do we need to make the bias current sunk by M3 and M4 equal to the diff-pairbias current,Ib?
-### Design a bias circuit for the folded-cascode amplifier that receivesinput from a single current source.
+No. If the current flowing through transistors M3 and M4 is different from Ib, the math still works out so that Iout = I2 - I1. Figure 2 shows what this looks like. If the current flowing through M3 is called I3 and the current flowing through M4 is I4, we know that I3 = I4 due to the PMOS current mirror. Applying KCL at the node between M3 and M5 we can create an equation 
+
+### Design a bias circuit for the folded-cascode amplifier that receives input from a single current source.
 ## 2. Schematic Capture and simulation
 
 ### Voltage Transfer Characteristics
