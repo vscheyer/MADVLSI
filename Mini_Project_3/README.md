@@ -19,9 +19,15 @@ The upper bound for the common mode input voltage must allow for the PMOS transi
 Iout = I2 - I1 (see section 1 for further explanation).
 
 ### Do we need to make the bias current sunk by M3 and M4 equal to the diff-pairbias current,Ib?
-No. If the current flowing through transistors M3 and M4 is different from Ib, the math still works out so that Iout = I2 - I1. Figure 2 shows what this looks like. If the current flowing through M3 is called I3 and the current flowing through M4 is I4, we know that I3 = I4 due to the PMOS current mirror. Applying KCL at the node between M3 and M5 we can create an equation 
+No. If the current flowing through transistors M3 and M4 is different from Ib, the math still works out so that Iout = I2 - I1. Figure 2 shows what this looks like. Let's label the current flowing through M3 and M4 with a variable Im. Then, applying KCL at the node between M5 and M3, we see that the current flowing through M5 is Im - I1. This current is mirrored all the way over to M10. Applying KCL at the node between M6 and M4 reveals that the current flowing through M6 is Im - I2. When we apply KCL at the node by Iout, we see that the Im variables cancel out and we are left with Iout = I2 - I1. 
+
+![image](images/current_sink_calculations.jpg)
 
 ### Design a bias circuit for the folded-cascode amplifier that receives input from a single current source.
+For the bias voltage generation circuit, I started with the circuit from Figure 1d in the "Low-Voltage CMOS Bias Circuit For All Current Levels" paper by Brad Minch. This circuit generates voltages that are suitable for Vbp and Vcn. I mirrored that circuit and swapped the PMOS and NMOS transistors to generate voltages for Vcp and Vbn. When I mirrored the circuit, I also accounted for the transistors of width m and 1/n. Finally, I added a PMOS and an NMOS transistor between the original circuit and the mirrored version to pass the Ib current to the mirrored half of the circuit. Figure 3 shows a sketch of this bias circuit.
+
+![image](images/bias_circuit_sketch.jpg)
+
 ## 2. Schematic Capture and simulation
 
 ### Voltage Transfer Characteristics
