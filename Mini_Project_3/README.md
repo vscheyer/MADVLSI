@@ -16,7 +16,7 @@ For the other input, an increase in I2 means that Vout increases. V2 must decrea
 The upper bound for the common mode input voltage must allow for the PMOS transistors in the differential pair to be in saturation, which requires a voltage drop of 0.8 or 0.9 V. In this 1.8 V technology, that means that the common mode input voltage should have a maximum of about 0.9 V. On the lower end, the voltage should be high enough to allow for a tenth of a volt across the current source transistor. So the input voltage should be at least 0.1 V. For simulations, I chose voltages of 0.2, 0.34, 0.48, 0.62, and 0.76 V so that the values are evenly spaced within the allowable range.
 
 ### If the output voltage were fixed, what would the output current be in terms of I1 and I2?
-Iout = I2 - I1 (see section 1 for further explanation).
+Iout = I2 - I1 (see first section for further explanation).
 
 ### Do we need to make the bias current sunk by M3 and M4 equal to the diff-pairbias current,Ib?
 No. If the current flowing through transistors M3 and M4 is different from Ib, the math still works out so that Iout = I2 - I1. Figure 2 shows what this looks like. Let's label the current flowing through M3 and M4 with a variable Im. Then, applying KCL at the node between M5 and M3, we see that the current flowing through M5 is Im - I1. This current is mirrored all the way over to M10. Applying KCL at the node between M6 and M4 reveals that the current flowing through M6 is Im - I2. When we apply KCL at the node by Iout, we see that the Im variables cancel out and we are left with Iout = I2 - I1. 
