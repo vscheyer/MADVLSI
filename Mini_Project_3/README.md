@@ -32,7 +32,11 @@ For the bias voltage generation circuit, I started with the circuit from Figure 
 
 ### Voltage Transfer Characteristics
 
+![image] (images/VTC.png)
+
 ### Voltage-to-Current Transfer Characteristics
+
+![image] (images/VtCTC.png)
 
 ### Loopgain
 
