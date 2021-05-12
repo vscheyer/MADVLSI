@@ -31,7 +31,6 @@ N 580 -300 600 -300 { lab=Vout}
 N 600 -300 610 -300 { lab=Vout}
 N 70 -200 70 -180 { lab=Vout}
 N 70 -120 70 -100 { lab=GND}
-C {/home/vscheyer/MADVLSI/Mini_Project_3/diff_amp.sym} 210 0 0 0 {name=X1}
 C {/home/vscheyer/MADVLSI/Mini_Project_3/bias_circ.sym} -140 -40 0 0 {name=X2}
 C {madvlsi/madvlsi/vdd.sym} 470 -420 0 0 {name=l1 lab=VDD}
 C {madvlsi/madvlsi/vdd.sym} 140 -420 0 0 {name=l2 lab=VDD}
@@ -67,9 +66,9 @@ set wr_singlescale
 .param l=0.5
 .param m=3
 .param n=2
-dc V1 0.2 0.8 0.01
+dc V1 0 1.8 0.01
 
-wrdata /home/vscheyer/MADVLSI/Mini_Project_3/VtCTC/VTC.txt all
+wrdata /home/vscheyer/MADVLSI/Mini_Project_3/VtCTC/VtCTC.txt i(Vmeas)
 
 .endc"}
 C {devices/lab_pin.sym} 600 -300 1 0 {name=l18 sig_type=std_logic lab=Vout}
@@ -78,6 +77,7 @@ C {devices/lab_pin.sym} -10 -200 1 0 {name=l19 sig_type=std_logic lab=V2}
 C {devices/lab_pin.sym} -90 -200 1 0 {name=l14 sig_type=std_logic lab=V1}
 C {madvlsi/madvlsi/ammeter1.sym} 570 -300 3 0 {name=Vmeas}
 C {madvlsi/madvlsi/vsource.sym} 70 -150 0 0 {name=Vout
-value=0.48}
+value=0.6}
 C {madvlsi/madvlsi/gnd.sym} 70 -100 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 70 -200 1 0 {name=l16 sig_type=std_logic lab=Vout}
+C {/home/vscheyer/MADVLSI/Mini_Project_3/diff_amp_circ.sym} 210 0 0 0 {name=X1}
